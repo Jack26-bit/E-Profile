@@ -45,6 +45,11 @@ const buttonItemVariants = {
   },
 };
 
+const seededRandom = (seed: number) => {
+  const x = Math.sin(seed * 127.1 + 311.7) * 43758.5453;
+  return x - Math.floor(x);
+};
+
 const buildings = [
   { h: 35, w: 3, left: 2 },
   { h: 50, w: 4, left: 8 },
@@ -122,8 +127,8 @@ export default function Hero() {
                   style={{
                     left: `${15 + fj * 25}%`,
                     top: `${15 + fi * 20}%`,
-                    animation: `pulse-glow ${2 + Math.random() * 3}s ease-in-out infinite`,
-                    animationDelay: `${Math.random() * 3}s`,
+                    animation: `pulse-glow ${2 + seededRandom(fi * 100 + fj) * 3}s ease-in-out infinite`,
+                    animationDelay: `${seededRandom(fi * 100 + fj + 100) * 3}s`,
                   }}
                 />
               ))
