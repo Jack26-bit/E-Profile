@@ -1,0 +1,122 @@
+{
+  "design_system": {
+    "theme": "dark",
+    "archetype": "5 (Luxury/Editorial) + 4 (Swiss High-Contrast)",
+    "core_concept": "Japanese Zen/Katana Precision mixed with ML/Aerospace Engineering. Dark, ink-heavy, highly editorial, mimicking string-tune.fiddle.digital.",
+    "colors": {
+      "background": "#030303",
+      "surface": "#0a0a0a",
+      "text_primary": "#F4F4F0",
+      "text_secondary": "#8A8A8A",
+      "text_tertiary": "#4A4A4A",
+      "accent": "#FF3B30",
+      "border": "rgba(244, 244, 240, 0.08)"
+    },
+    "typography": {
+      "font_families": {
+        "heading": "Cormorant Garamond, serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "rules": {
+        "h1": "text-5xl md:text-7xl font-light tracking-tighter leading-none mixed-case with strategic italicized words",
+        "h2": "text-3xl md:text-5xl font-light tracking-tight leading-none text-[#F4F4F0]",
+        "h3": "text-xl md:text-2xl font-mono uppercase tracking-[0.2em] text-[#8A8A8A]",
+        "body": "text-base leading-relaxed text-[#8A8A8A]",
+        "labels": "text-xs font-mono uppercase tracking-widest text-[#4A4A4A]"
+      }
+    },
+    "spacing_and_layout": {
+      "container": "max-w-7xl mx-auto px-6 md:px-12",
+      "section_spacing": "py-32 md:py-48",
+      "grid_patterns": "Asymmetrical masonry for projects, broken grid for about section, deep indentations for text blocks, floating labels."
+    },
+    "motion_and_interactions": {
+      "scroll_animations": "CSS-light smooth scroll (Lenis), staggered text reveals on scroll (split words/chars).",
+      "hover_states": "Images slightly scale down (0.95) with grayscale to color transition. Project captions reveal on hover.",
+      "cursor": "Custom dot cursor with inverse difference blending, expands over clickable elements.",
+      "page_load": "Glitch/scramble text reveal for the hero headline."
+    }
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "layout": "100vh full bleed, centered or deep-left align with massive top padding. Large mixed-case typography breaking across multiple lines. Tiny mono coordinates or versioning scattered in corners.",
+      "copy_direction": {
+        "tiny_label_1": "v_ 1.0.0",
+        "tiny_label_2": "BLR, IND",
+        "headline_line1": "To master the model",
+        "headline_line2": "is to master the",
+        "headline_line3": "unknown.",
+        "sub_headline": "Neeraj Kiran Janakula",
+        "tagline": "AI/ML Engineer • Creative Technologist • Full Stack"
+      }
+    },
+    {
+      "id": "about",
+      "layout": "Two-column asymmetrical. Left column empty or containing tiny floating glyph/Japanese character. Right column contains large editorial pull quote and smaller dense paragraph.",
+      "copy_direction": {
+        "section_label": "01. Philosophy",
+        "pull_quote": "Exploring the intersection of Artificial Intelligence, Space Systems, Backend Engineering, and Quantitative Finance.",
+        "paragraph": "Based in Bangalore. Leading ML initiatives for aerospace, from CubeSats to drone weather networks. Engineering backend systems with the precision of a katana strike."
+      }
+    },
+    {
+      "id": "skills",
+      "layout": "Marquee auto-scroll bands for tech stack, moving in opposite directions. Large outline text with a single accent color fill on hover.",
+      "copy_direction": {
+        "band_1": "Python / C++ / Flutter / Node.js / React / JavaScript / HTML / CSS / Arduino",
+        "band_2": "PyTorch / Pandas / Firebase / ML Kit / Quantitative Trading / RL"
+      }
+    },
+    {
+      "id": "projects",
+      "layout": "Masonry/Asymmetric grid. Images varying in height and width. Captions float beside or reveal on hover. Thin 1px borders separating items or completely borderless with deep negative space.",
+      "copy_direction": {
+        "section_label": "02. Archives"
+      }
+    },
+    {
+      "id": "experience",
+      "layout": "Vertical timeline but highly minimal. Just years, roles, and tiny description. Use monospace heavily here for a 'sys-log' feel.",
+      "copy_direction": {
+        "section_label": "03. Journey"
+      }
+    },
+    {
+      "id": "contact",
+      "layout": "Cookie-banner-like sticky footer or massive typography at the bottom of the page. Extreme minimalist layout.",
+      "copy_direction": {
+        "headline": "Initiate Protocol",
+        "email_cta": "neerajkiran26@gmail.com",
+        "links": "GitHub / LinkedIn"
+      }
+    }
+  ],
+  "media_assets": {
+    "background_texture": "https://images.unsplash.com/photo-1608501821300-4f99e58bba77?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGRhcmslMjBpbmslMjB0ZXh0dXJlfGVufDB8fHx8MTc4MTI5MjUwN3ww&ixlib=rb-4.1.0&q=85",
+    "projects": [
+      {
+        "title": "AI Weather Assistant for Drones",
+        "image_url": "https://images.unsplash.com/photo-1477840539360-4a1d23071046?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxkcm9uZSUyMG5pZ2h0JTIwc2t5fGVufDB8fHx8MTc4MTI5MjUwOHww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "title": "How-to-build-a-Cansat",
+        "image_url": "https://images.unsplash.com/photo-1710267224163-0ee7e0d7a7ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxzYXRlbGxpdGUlMjBzcGFjZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzgxMjkyNTA3fDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "title": "Trading Algo AI",
+        "image_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMG1hcmtldCUyMGFic3RyYWN0fGVufDB8fHx8MTc4MTI5MjUwN3ww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "title": "Multiplayer Chess",
+        "image_url": "https://images.unsplash.com/photo-1739416333363-4b01dd9874c0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwzfHxjaGVzcyUyMGJvYXJkJTIwZGFya3xlbnwwfHx8fDE3ODEyOTI1MDd8MA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "title": "IKO / Resq App",
+        "image_url": "https://images.unsplash.com/photo-1776702683574-f91f73a3cd26?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxtb2JpbGUlMjBhcHAlMjBVSSUyMGRhcmt8ZW58MHx8fHwxNzgxMjkyNTA3fDA&ixlib=rb-4.1.0&q=85"
+      }
+    ]
+  },
+  "instructions_to_main_agent": "Ensure pure HTML + Tailwind for structural components. Heavy use of framer-motion for staggering text. Apply Lenis for smooth scroll if possible. Use the background_texture with low opacity (mix-blend-overlay or opacity-10) over a fixed #030303 background to create a dark grainy feel. Do not use generic card UI; everything must feel borderless, editorial, and typographical. Avoid standard purple/teal AI colors; strictly stick to Bone/Cream text on Obsidian background with Vermillion Red accent (#FF3B30). Use exact typography pairing (Cormorant Garamond + Manrope + JetBrains Mono). Include data-testid on interactive elements. Ensure responsive masonry behavior for projects."
+}
